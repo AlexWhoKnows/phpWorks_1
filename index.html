@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Discriminant</title>
+    <script src="main.js"></script>
+</head>
+<body>
+<form action="main.php">
+    <h2>Форма квадратного уравнения Ax<sup>2</sup> + Bx + C = 0</h2>
+    <p>Ввод коэффициентов</p>
+    A: <input type="text" name="A"><br>
+    B: <input type="text" name="B"><br>
+    C: <input type="text" name="C"><br>
+    <div class="form-check">Метод решения:
+        Дискриминант <input type="radio" name="solverType" id="disc" value="d" checked>
+        теорема Виета <input type="radio" name="solverType" id="viet" value="v">
+    </div>
+    <br>
+    <div class="dop" hidden>
+        Требуется ввести диапазон поиска корней<br/>
+        Минимум: <input type="text" name="min"><br/>
+        Максимум: <input type="text" name="max">
+    </div>
+    <input type="submit" value="Рассчитать корни">
+</form>
+</body>
+</html>
